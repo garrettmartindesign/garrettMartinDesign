@@ -1,0 +1,42 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif; /* Example modern font */
+    margin: 0;
+    color: #667585; /* Neutral color for text */
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #573CB2; /* Primary color */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: white;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+section {
+    padding: 2rem;
+}
+
+/* Section Specific Styling (Example) */
+#about {
+    background-color: #f2cf33; /* Accent color */
+}
+
+/* ... add styles for projects and contact sections */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #E07754; /* Secondary color */
+    color: white;
+}
