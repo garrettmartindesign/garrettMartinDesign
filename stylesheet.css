@@ -1,7 +1,8 @@
 /* General Styling */
+
 body {
     font-family: 'Montserrat', sans-serif; /* Example modern font */
-    margin: 0;
+    margin: auto;
     color: #464646; /* Neutral color for text */
     background-color: #ffffff;
 }
@@ -9,34 +10,48 @@ body {
 header {
     background-color: #573CB2; /* Primary color */
     color: white;
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
-#logo {
-    float: left;
-}
+
 h1, h2 {
     color: white;
 }
 nav {
-    float: right;
+    position: absolute;
+    padding: 24px;
+    right: 0;
+}
+#logo {
+    padding-left: 40px;
+}
+nav div {
+    display: inline;
+    
 }
 nav a {
     color: white;
     margin: 0 1rem;
     text-decoration: none;
+    float: right;
+   
 }
 
 section {
     padding: 2rem;
 }
 
-/* Section Specific Styling (Example) */
-#about {
+/* Featured Projects */
+#featuredProjects {
     background-color: #f2cf33; /* Accent color */
 }
 
-/* ... add styles for projects and contact sections */
+/* About Me */
+
+/* Contact */
+
+/* Footer */
 
 footer {
     text-align: center;
