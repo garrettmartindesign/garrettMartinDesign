@@ -2,7 +2,7 @@
 body {
     font-family: 'Montserrat', sans-serif; /* Example modern font */
     margin: 0;
-    color: #667585; /* Neutral color for text */
+    color: #464646; /* Neutral color for text */
     background-color: #ffffff;
 }
 
@@ -12,11 +12,15 @@ header {
     padding: 1rem;
     text-align: center;
 }
-
+#logo {
+    float: left;
+}
 h1, h2 {
     color: white;
 }
-
+nav {
+    float: right;
+}
 nav a {
     color: white;
     margin: 0 1rem;
