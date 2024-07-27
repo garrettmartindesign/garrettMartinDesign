@@ -18,14 +18,19 @@ header {
 h1, h2 {
     color: white;
 }
+
+/* Navigation and Header placement*/
+
 nav {
     position: absolute;
-    padding: 24px;
+    padding-right: 40px;
     right: 0;
 }
+
 #logo {
     padding-left: 40px;
 }
+
 nav div {
     display: inline;
     
@@ -35,6 +40,7 @@ nav a {
     margin: 0 1rem;
     text-decoration: none;
     float: right;
+    padding: 1rem;
    
 }
 
