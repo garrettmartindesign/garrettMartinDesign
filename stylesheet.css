@@ -1,67 +1,79 @@
-/* General Styling */
-
+/* universial styling */
 body {
-    font-family: 'Montserrat', sans-serif; /* Example modern font */
-    margin: auto;
-    color: #464646; /* Neutral color for text */
-    background-color: #ffffff;
+    font-family: sans-serif;
+    margin: 0;
+}
+ /* left--sidebar navigation*/
+ .sidebar img {
+    max-width: 50px;
+    border-radius: 50%;
 }
 
-header {
-    background-color: #573CB2; /* Primary color */
-    color: white;
-    display: flex;
-    align-items: center;
-    position: relative;
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+    height: 900px;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #eee;
+    overflow-x: hidden;
 }
 
-h1, h2 {
-    color: white;
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Navigation and Header placement*/
-
-nav {
-    position: absolute;
-    padding-right: 40px;
-    right: 0;
+.sidebar nav li {
+    margin-bottom: 10px;
 }
 
-#logo {
-    padding-left: 40px;
-}
-
-nav div {
-    display: inline;
-    
-}
 nav a {
-    color: white;
-    margin: 0 1rem;
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    float: right;
-    padding: 1rem;
-   
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
 }
 
-section {
-    padding: 2rem;
+nav a:hover {
+    color: #064579;
+}
+.container {
+    display: flex;
 }
 
-/* Featured Projects */
-#featuredProjects {
-    background-color: #f2cf33; /* Accent color */
+/*right--content container*/
+.content {
+    flex-grow: 1;
+    margin-left: 250px;
 }
-
-/* About Me */
-
-/* Contact */
-
-/* Footer */
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #E07754; /* Secondary color */
-    color: white;
-}
+/*ACCORDION*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }

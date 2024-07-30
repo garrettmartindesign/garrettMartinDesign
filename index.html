@@ -1,39 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - UX/UI Portfolio</title>
-    <link rel="stylesheet" href="stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="script.js"></script>
+<title>Garrett Martin Design | Case Study Temp.</title>
 </head>
 <body>
-    <header>
-        <div id="logo"> <h1>Garrett Martin Design</h1> </div>
-            
-        <nav>
-            <div><a href="#about">Featured Projects</a></div>
-            <div><a href="#projects">Contact</a></div>
-            <div><a href="#about">About Me</a></div>
-        </nav>
-    </header>
+    <!--Side Navigation-->
+    
+    <div class="sidenav">
+        <div class="logo">
+            <img src="img/logo/gmLogoPurple.svg">
+        </div>
+        <a href="#">Featured Projects</a>
+        <a href="#">About Me</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
 
-    <main>
-        <section id="featuredProjects">
-            <h2>Featured Projects</h2>
-            </section>
+    <!--Page Content-->
+    <div class="main">
+        <button class="accordion" id="secFirst">Section 1</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
 
-        <section id="contact">
-            <h2>Reach Out!</h2>
-            </section>
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
 
-        <section id="about">
-            <h2>About Me</h2>
-            </section>
-    </main>
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
+        
+        <button class="accordion">Section 4</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
 
-    <footer>
-        </footer>
+        <button class="accordion">Section 4</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
 
-    <script src="script.js"></script> 
+        <button class="accordion" id="secLast">Section 4</button>
+        <div class="panel">
+        <p>Lorem ipsum...</p>
+        </div>
+
+    </div>    
+<script>
+    var acc = document.getElementsByClassName("accordion");
+     var i;
+        
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+    }
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            } else {
+             panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+    });
+    }
+
+ </script>    
 </body>
 </html>
