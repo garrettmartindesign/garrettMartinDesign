@@ -1,4 +1,4 @@
-/*----------------------------------------Fonts & Color----------------------------------------------
+/*----------------------------------------Main Fonts & Color----------------------------------------------
   Color
     h1= Major
     h2= Poppins Bold
@@ -114,101 +114,398 @@
   }
 */
 
-/*----------------------------------------Body----------------------------------------------*/ 
+/*----------------------------------------USDA Fonts & Color--------------
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-/*----------------------------------------Accordion----------------------------------------------*/ 
+.khula-light {
+  font-family: "Khula", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.khula-regular {
+  font-family: "Khula", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.khula-semibold {
+  font-family: "Khula", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.khula-bold {
+  font-family: "Khula", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.khula-extrabold {
+  font-family: "Khula", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+------------------*/
+* {
+  box-sizing: border-box;
+}
+
+/*----------------------------------------Body----------------------------------------------*/ 
+.flex-container {
+  background-color: white;
+  height: 100%;
+
+}
+
+h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #452f9f;
+  font-size: x-large;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+/*----------------------------------------Content Accordion----------------------------------------------*/ 
 
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
   }
 
-#radiusTop {
-    border-radius: 8px 8px 0px 0px;
-  }
+  #radiusTop {
+      border-radius: 8px 8px 0px 0px;
+    }
 
-#radiusBottom {
+  #radiusBottom {
     border-radius: 0px 0px 8px 8px;
   } 
-  
- /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
+    
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
     background-color: #ccc;
   }
-  
-  /* Style the accordion panel. Note: hidden by default */
-.panel {
+    
+    /* Style the accordion panel. Note: hidden by default */
+  .panel {
     padding: 0 18px;
     background-color: white;
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-.accordion:after {
+  .accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
+      
+    }
     
-  }
-  
-.active:after {
+  .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-  }
+    }
+
+.titleHeader {
+  height: 200px; /* Full-height: remove this if you want "auto" height */
+  width: 65%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  top: 0; /* Stay at the top */
+  justify-items: center;
+  background-color: white; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.titleHeader div {
+}
+
+.headerUSDA {
+  text-align: center;
+  height: 200px;
+  padding: 0px 24px 24px 24px;
+  background-image: url(/img/caseStudies/usdaRedesign/designSystem/mockups/desktop\ mockup.jpg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+}
+
+.textusda h3 {
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+
+}
+
+.textusda p {
+  font-family: "Khula", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.usdaPanel h3 {
+  font-family: "Abril Fatface", serif;
+  text-align: left;
+}
+
+.usdaPanel p {
+  font-family: "Khula", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#usdaOverview {
+  margin: 24px;
+  background-color: #fafafa;
+  padding: 16px;
+
+}
+
+#usdaP1 {
+  margin: 8px;
+  padding: 16px;
+}
 
 /*----------------------------------------Side Bar----------------------------------------------*/
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 250px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: white; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+
+.navAccordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  background-color: white;
+  font-size: 28px;
+  
   }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .navAccordion:hover {
+    background-color: #ccc;
+    }
+    
+    /* Style the accordion panel. Note: hidden by default */
+  .navPanel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .navAccordion {
+    background-color: #fafafa;
+    font-size: 28px;
+  }
+    
+  .navAccordion:after {
+    content: none;
+  }
+    
+  .active, .navAccordion:hover {
+    color: #452f9f;
+  }
+    
+  .sidenav li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 24;
+  }
+    
+  .navPanel {
+    margin-left: -40px;
+    background-color: #fafafa;
+    
+  }
+    
+  .navPanel a {
+    color: #464646;
+  }
+    
+  .navPanel a:hover {
+    color: #452f9f;
+  }
+  
+  
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 30%; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fafafa; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+
+}
+
+.sidenav h2{
+  text-align: left;
+}
+
+.portrait img{
+  max-width: 50%;
+  padding: 24px;
+  margin-left: 10%;
+}
+.portrait {
+width: 100%;
+  
+}
 
 .logo img {
     max-width: 50px;
-    padding: 16px;
   }
 
   
 /* The navigation menu links */
 .sidenav a {
-    padding: 6px 8px 6px 16px;
-    font-family: "Poppins";
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-  }
+  padding: 6px 8px 6px 16px;
+  font-family: "Poppins";
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
   
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #452f9f;
-  }
+  color: #452f9f;
+}
   
 /* Style page content */
 .main {
-    margin-left: 260px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    font-family: "Poppins";
-  }
+  height: 1000px;
+  padding: 0px 32px;
+  font-family: "Poppins";
+  margin-left: 30%;
+
+}
+.mainAccordion {
+
+}
+
+.introduction{
+  padding-left: 40px;
+}
+
+.introduction a {
+  font-size: 18px;
+  margin-left: -16px;
+}
+
+/*----------------Gallery----------------------*/
+div.gallery {
+  margin: 16px;
+  border: 1px solid rgb(69, 47, 159, 0.2);
+  box-shadow: rgb(69, 47, 159, 0.2);
+  float: left;
+  width: 375px;
+  border-radius: 8px;
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(69, 47, 159, 0.5);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0px 0px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
 /*----------------------------------------Media----------------------------------------------*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 1440px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    div.gallery {width: 360px;}
   }
+
+  @media screen and (max-width: )
+
+  /* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
