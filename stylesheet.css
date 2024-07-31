@@ -169,8 +169,14 @@
 
 .main {
   background-color: white;
-  height: 100%;
+  width: 100%;
+  margin: auto;
   margin-bottom: 24px;
+
+}
+
+body {
+  font-family: "Poppins";
 }
 
 h2{
@@ -180,13 +186,29 @@ h2{
   color: #452f9f;
   font-size: 32px;
   text-align: center;
+  line-height: 40px;
 }
 
 h3 {
   text-align: center;
 }
 
+.introduction h3 {
+  text-align: left;
+}
 
+#gallery {
+  margin: auto;
+}
+
+.currentPage {
+  color: #01737d;
+
+}
+
+.currentPage:hover {
+  color: #452f9f;
+}
 /*----------------------------------------Content Accordion----------------------------------------------*/ 
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -243,6 +265,10 @@ h3 {
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
+.titleHeader h2 {
+  color: #01737d;
+}
+
 .headerUSDA {
   height: 300px;
   background-image: url(/img/caseStudies/usdaRedesign/designSystem/mockups/view-computer-monitor-display-with-desk.jpg);
@@ -291,17 +317,14 @@ h3 {
   padding: 16px;
 }
 
-#gallery {
-  margin-top: 24px;
-  margin: auto;
-}
 /*----------------------------------------Side Bar----------------------------------------------*/
 
 .navAccordion {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  margin-left: 16px;
+  padding-left: 24px;
   width: 100%;
   text-align: left;
   border: none;
@@ -312,6 +335,10 @@ h3 {
   
   }
 
+  .readMe {
+    padding: 60px;
+  }
+
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .navAccordion:hover {
     background-color: white;
@@ -319,11 +346,12 @@ h3 {
     
     /* Style the accordion panel. Note: hidden by default */
   .navPanel {
-    padding: 0 18px;
+    padding: 0 8px;
     background-color: white;
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    box-shadow: 10px 10px insert;
   }
 
   .navAccordion {
@@ -358,6 +386,8 @@ h3 {
   .navPanel a:hover {
     color: #452f9f;
   }
+
+
   
 
 .sidenav {
@@ -386,7 +416,8 @@ width: 100%;
 }
 
 .logo img {
-    max-width: 50px;
+    max-width: 75px;
+    margin-left: 16px;
   }
 
   
@@ -427,18 +458,22 @@ width: 100%;
   margin-left: -16px;
 }
 
-#intoPasive h2 {
+.passive {
   color: #444;
   font-size: 24px;
+  line-height: 100%;
 }
 
 /*----------------Gallery----------------------*/
+
+
 div.gallery {
-  margin: 16px;
   border: 1px solid rgb(69, 47, 159, 0.2);
   box-shadow: rgb(69, 47, 159, 0.2);
   float: left;
-  width: 100px;
+  width: 100%;
+  height: auto;
+  margin: 24px 0px;
   border-radius: 8px;
 }
 
@@ -447,74 +482,18 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 60%;
   height: auto;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px 0px 0px 8px;
+  float: left;
+  margin-right: 24px;
 }
 
 div.desc {
   padding: 15px;
-  text-align: center;
+  text-align: left;
 }
 
 /*----------------------------------------Media----------------------------------------------*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-width: 1440px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-    div.gallery {width: 360px;}
-  }
-
-  @media screen and (max-width: )
-
-  /* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@

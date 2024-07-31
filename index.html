@@ -12,24 +12,25 @@
 </head>
 <body>
 <!--Side Navigation------------------------------------------------------------------->
-    <div class="flex-container">
-        <div class="sidenav">
-            <div class="logo">
-                <a href="/index.html"><img src="img/logo/gmLogoPurple.svg"></a>
+<div class="flex-container">
+    <div class="sidenav">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/SVG/gmLogoPurple_circle.svg"></a>
+        </div>
+        <div class="portrait"><img src="/img/headshot/simiportrait.png">
+            <div class="introduction">
+                <h2 id="peach">Hello!</h2>
+                <h2 id="yellow">My name is Garrett!</h2>
+                <h2 id="orange">UX/UI Designer,</h2>
+                <h2 id="skyBlue">Visual Storyteller,</h2>
+                <h2 id="purple">Photographer,</h2>
+                <h2 id="darkPurple">Dog Dad.</h2>
+                <h2><a href="/about.html" >Read More</a></h2>
+            
+                </h2>
             </div>
-            <div class="portrait"><img src="/img/headshot/simiportrait.png">
-                <div class="introduction">
-                    <h2>Hello!
-                    <br>My name is Garrett!
-                    <br>UX/UI Designer,
-                    <br>Visual Storyteller,
-                    <br>Photographer,
-                    <br>Dog Dad,
-                    <br><a href="/about.html" >Read More</a>
-                    </h2>
-                </div>
-            </div>
-            <!--Hidden Client Tab-----------------------------------------
+        </div>   
+         <!--Hidden Client Tab-----------------------------------------
             <button class="accordion">Clients</button>
             <div class="panel">
                 <ul>
@@ -38,55 +39,53 @@
                 <li><a href="x">The Sound Room</a></li>
                 </ul>
             </div>
-    ------------------------------------------------------------->
-            <button class="navAccordion">Featured Projects</button>
-            <div class="navPanel">
-                <ul>
-                <li><a href="x">Sierra's Race</a></li> 
+    ------------------------------------------------------------->  
+        <button class="navAccordion" ><h4 class="currentPage">Featured Projects</h4></button>
+        <div class="navPanel">
+            <ul>
+                <li><a href="/sierrasrace.html">Sierra's Race</a></li> 
                 <li><a href="/usda.html">USDA</a></li>
                 <li><a href="/theSoundRoom.html">The Sound Room</a></li>
                 </ul>
-            </div>
+        </div>
 
-            <button class="navAccordion">Contact</button>
-            <div class="navPanel">
-                <ul>
+        <button class="navAccordion"><h4>Contact</h4></button>
+        <div class="navPanel">
+            <ul>
                 <li><a href="(303)909-2779">Phone</a></li> 
                 <li><a href="garrettmartindesign@gmail.com">Email</a></li>
-                </ul>
-            </div>
+            </ul>
         </div>
+    </div>   
         
 <!--Page Content---------------------------------------------------------------------->
-        <div class="main">
-            <!--Featured Photogallery-->
+    <div class="main">
+        <div class="titleHeader">
+            <h2>Featured Projects</h2>
+        </div>
+        <!--Featured Photogallery-->
+        <div id="galleryDev">
             <div class="gallery">
-                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg">
-                  <img src="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg" alt="Cinque Terre" width="600" height="400">
+                <a target="_blank" href="/img/caseStudies/sierrasRace/raceDayMockup.jpg">
+                    <img src="/img/caseStudies/sierrasRace/raceDayMockup.jpg" alt="Cinque Terre" width="600" height="400">
                 </a>
                 <div class="desc">Add a description of the image here</div>
-              </div>
-              
-              <div class="gallery">
-                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg">
-                  <img src="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg" alt="Forest" width="600" height="400">
+            </div>
+                
+            <div class="gallery">
+                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/view-computer-monitor-display-with-desk.jpg">
+                    <img src="/img/caseStudies/usdaRedesign/designSystem/mockups/view-computer-monitor-display-with-desk.jpg" alt="Forest" width="600" height="400">
                 </a>
                 <div class="desc">Add a description of the image here</div>
-              </div>
-              
-              <div class="gallery">
-                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg">
-                  <img src="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg" alt="Northern Lights" width="600" height="400">
+            </div>
+                
+            <div class="gallery">
+                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/">
+                    <img src="/img/caseStudies/theSoundRoom/Design Systems/side-view-girl-taking-photos-with-smartphone.jpg" alt="Northern Lights" width="600" height="400">
                 </a>
                 <div class="desc">Add a description of the image here</div>
-              </div>
-              
-              <div class="gallery">
-                <a target="_blank" href="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg">
-                  <img src="/img/caseStudies/usdaRedesign/designSystem/mockups/desktop mockup.jpg" alt="Mountains" width="600" height="400">
-                </a>
-                <div class="desc">Add a description of the image here</div>
-              </div>
+            </div>
+        </div>    
             <!-----------Accordion Hidden----------------------------------------------------------
             <div class="mainAccordion">
                 <button class="accordion" id="radiusTop">Section 1</button>
@@ -120,9 +119,9 @@
                 </div>
             </div>
             -------------->   
-        </div> 
+    </div> 
        
-    </div>
+</div>
 <!--Script--------------------------------------Content-------------------------------->    
 <script>
     var acc = document.getElementsByClassName("accordion");
