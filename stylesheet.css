@@ -157,11 +157,20 @@
   box-sizing: border-box;
 }
 
+
 /*----------------------------------------Body----------------------------------------------*/ 
 .flex-container {
   background-color: white;
   height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
 
+.main {
+  background-color: white;
+  height: 100%;
+  margin-bottom: 24px;
 }
 
 h2{
@@ -169,7 +178,7 @@ h2{
   font-weight: 700;
   font-style: normal;
   color: #452f9f;
-  font-size: x-large;
+  font-size: 32px;
   text-align: center;
 }
 
@@ -228,33 +237,27 @@ h3 {
     }
 
 .titleHeader {
-  height: 200px; /* Full-height: remove this if you want "auto" height */
-  width: 65%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1;
-  top: 0; /* Stay at the top */
-  justify-items: center;
+  height: 150px; /* Full-height: remove this if you want "auto" height */
+  width: 100%;
   background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
 }
 
-.titleHeader div {
-}
-
 .headerUSDA {
-  text-align: center;
-  height: 200px;
-  padding: 0px 24px 24px 24px;
-  background-image: url(/img/caseStudies/usdaRedesign/designSystem/mockups/desktop\ mockup.jpg);
+  height: 300px;
+  background-image: url(/img/caseStudies/usdaRedesign/designSystem/mockups/view-computer-monitor-display-with-desk.jpg);
   background-size: 100%;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  margin-top: 200px;
+  border-radius: 8px;
+  margin-top: 24px;
+  
+  
 }
 
 .textusda h3 {
   font-family: "Abril Fatface", serif;
-  text-align: center;
+  text-align: ;
 
 }
 
@@ -277,8 +280,8 @@ h3 {
 }
 
 #usdaOverview {
-  margin: 24px;
-  background-color: #fafafa;
+  margin: 24px 0px;
+  background-color: white;
   padding: 16px;
 
 }
@@ -288,6 +291,10 @@ h3 {
   padding: 16px;
 }
 
+#gallery {
+  margin-top: 24px;
+  margin: auto;
+}
 /*----------------------------------------Side Bar----------------------------------------------*/
 
 .navAccordion {
@@ -307,7 +314,7 @@ h3 {
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .navAccordion:hover {
-    background-color: #ccc;
+    background-color: white;
     }
     
     /* Style the accordion panel. Note: hidden by default */
@@ -320,7 +327,7 @@ h3 {
   }
 
   .navAccordion {
-    background-color: #fafafa;
+    background-color: white;
     font-size: 28px;
   }
     
@@ -352,20 +359,16 @@ h3 {
     color: #452f9f;
   }
   
-  
-
 
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 30%; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #fafafa; /* Black */
+  background-color: white; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
-
+  position: fixed;
+  z-index: 1;
+  border-right: solid 1px hwb(252 18% 38% / 0.1)
 }
 
 .sidenav h2{
@@ -404,17 +407,18 @@ width: 100%;
   
 /* Style page content */
 .main {
-  height: 1000px;
-  padding: 0px 32px;
+  height: 100%;
+  width: 900px;
+  padding: 0px 40px;
   font-family: "Poppins";
-  margin-left: 30%;
-
+  margin-left: 32%;
+  
 }
 .mainAccordion {
 
 }
 
-.introduction{
+.introduction {
   padding-left: 40px;
 }
 
@@ -423,13 +427,18 @@ width: 100%;
   margin-left: -16px;
 }
 
+#intoPasive h2 {
+  color: #444;
+  font-size: 24px;
+}
+
 /*----------------Gallery----------------------*/
 div.gallery {
   margin: 16px;
   border: 1px solid rgb(69, 47, 159, 0.2);
   box-shadow: rgb(69, 47, 159, 0.2);
   float: left;
-  width: 375px;
+  width: 100px;
   border-radius: 8px;
 }
 
