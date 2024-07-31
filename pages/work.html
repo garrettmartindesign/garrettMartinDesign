@@ -7,39 +7,29 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>Garrett Martin Design | Splash</title>
-<style>
-    body {
-        background-image: url(/img/headshot/sassInARoom.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-</style>
+<script src="script.js"></script>
+<title>Garrett Martin Design | Featured Work</title>
 </head>
 <body>
 <!--Side Navigation------------------------------------------------------------------->
 <div class="flex-container">
-    <div class="sidenav" id="sideNavHome">
-        <div class="logoImg">
-            <div class="logo">
-                <a href="/index.html"><img src="/img/SVG/gmLogoPurple_circle.svg" alt="GMD Logo"></a>
-            </div>
-            <div class="portrait"><img src="/img/headshot/simiportrait.png" alt="Profile Portrait: Purple Hat">
-            </div> 
-        </div>  
-        <!--Hidden About   ------------> 
-        <div class="meBrief">
-            <div class="introductionSplash">
-                <h2 class="peach">Hello!</h2>
-                <h2 class="peach2">My name is Garrett!</h2>
-                <h2 class="peach3">Dog Dad,</h2>
-                <h2 class="purpleish">Photographer,</h2>
-                <h2 class="purple">Visual Storyteller,</h2>
-                <h2 class="darkpurple">UX/UI Designer,</h2>
+    <div class="sidenav">
+        <div class="logo">
+            <a href="/index.html"><img src="/img/SVG/gmLogoPurple_circle.svg"></a>
+        </div>
+        <div class="portrait"><img src="/img/headshot/simiportrait.png">
+            <div class="introduction">
+                <h2 id="peach">Hello!</h2>
+                <h2 id="yellow">My name is Garrett!</h2>
+                <h2 id="orange">UX/UI Designer,</h2>
+                <h2 id="skyBlue">Visual Storyteller,</h2>
+                <h2 id="purple">Photographer,</h2>
+                <h2 id="darkPurple">Dog Dad.</h2>
                 <h2><a href="/about.html" >Read More</a></h2>
+            
+                </h2>
             </div>
-        </div>    
-                      
+        </div>   
          <!--Hidden Client Tab-----------------------------------------
             <button class="accordion">Clients</button>
             <div class="panel">
@@ -50,7 +40,7 @@
                 </ul>
             </div>
     ------------------------------------------------------------->  
-        <button class="navAccordion" ><h4>Featured Projects</h4></button>
+        <button class="navAccordion" ><h4 class="currentPage">Featured Projects</h4></button>
         <div class="navPanel">
             <ul>
                 <li><a href="/sierrasrace.html">Sierra's Race</a></li> 
@@ -67,15 +57,13 @@
             </ul>
         </div>
     </div>   
-       
+        
 <!--Page Content---------------------------------------------------------------------->
     <div class="main">
-
-        <!--
         <div class="titleHeader">
             <h2>Featured Projects</h2>
         </div>
-       Featured Photogallery
+        <!--Featured Photogallery-->
         <div id="galleryDev">
             <div class="gallery">
                 <a target="_blank" href="/img/caseStudies/sierrasRace/raceDayMockup.jpg">
@@ -97,9 +85,8 @@
                 </a>
                 <div class="desc">Add a description of the image here</div>
             </div>
-        </div>   
-         
-            ---------Accordion Hidden----------------------------------------------------------
+        </div>    
+            <!-----------Accordion Hidden----------------------------------------------------------
             <div class="mainAccordion">
                 <button class="accordion" id="radiusTop">Section 1</button>
                 <div class="panel">
@@ -131,9 +118,9 @@
                 <p>Lorem ipsum...</p>
                 </div>
             </div>
-           -->
-        
-    </div>  
+            -------------->   
+    </div> 
+       
 </div>
 <!--Script--------------------------------------Content-------------------------------->    
 <script>
