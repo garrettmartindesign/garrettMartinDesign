@@ -166,7 +166,6 @@
 }
 
 .main {
-  width: 100%;
   margin: auto;
   margin-bottom: 24px;
   height: 100%;
@@ -186,6 +185,7 @@ a {
 
 body {
   font-family: "Poppins";
+  background-color: ;
 }
 
 h2{
@@ -193,45 +193,62 @@ h2{
   font-weight: 700;
   font-style: normal;
   color: #452f9f;
-  font-size: 32px;
+  font-size: 2em;
   text-align: left;
   line-height: 40px;
 }
 
 .logoImg {
   width: 100%;
-  height: 120px;
+  margin-left: 24px;
+  height: 100px;
   display: flex;
   align-items: center;
 }
 
 .logoImg div {
-  margin: 24px auto;
+  margin-left: 8px;
+  
 }
 
 .logo {
-  width: 100px;
+  width: 80px;
+  margin-right: 24px;
   float: left;
   }
 
 
 
 .portrait img{
-  width: 100px;
+  width: 80px;
 }
-
-
 
 .meBrief {
   width: 100%;
+  margin-top: 8px;
+  
 }
 
+.aboutme {
+  width 360px;
+  background-color: white;
+  opacity: 95%;
+  border: #464646;
+  margin-top: 130px;
+  border-radius: 16px;
+}
+
+.heyyall {
+  width: 600px;
+  margin: auto;
+  padding: 40px 24px;
+}
 
 .introductionSplash h2 {
   font-size: 24px;
   line-height: 24px;
   color: #452f9f;
-  margin-left: 24px;
+  margin-left: 16px;
   padding-left: 16px;
 }
 
@@ -251,7 +268,7 @@ h2{
   font-size: 24px;
   line-height: 24px;
   color: #fafafa;
-  margin-left: 24px;
+  margin-left: 16px;
   padding-left: 16px;
 }
 
@@ -282,6 +299,7 @@ h2{
   border: none;
   outline: none;
   transition: 0.4s;
+  
   }
 
   .caseInfo {
@@ -399,16 +417,19 @@ h2{
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  margin-left: 16px;
+  margin-left: 8px;
   padding-left: 24px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  background-color: white;
-  font-size: 28px;
   
+  }
+
+  .navAccordion h4 {
+    font-size: 24px
+    
   }
 
   .readMe {
@@ -418,6 +439,7 @@ h2{
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .navAccordion:hover {
     background-color: white;
+    
     }
     
     /* Style the accordion panel. Note: hidden by default */
@@ -428,11 +450,13 @@ h2{
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     box-shadow: 10px 10px insert;
+    border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
   }
 
   .navAccordion {
     background-color: white;
     font-size: 28px;
+    
   }
     
   .navAccordion:after {
@@ -447,16 +471,20 @@ h2{
     text-decoration: none;
     list-style: none;
     font-size: 24;
+    
   }
     
   .navPanel {
-    margin-left: -40px;
     background-color: #fafafa;
+    border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
+    border-top: 0.3px solid rgba(70, 47, 159, 0.119);
+    box-shadow: #464646;
     
   }
     
   .navPanel a {
     color: #464646;
+   
   }
     
   .navPanel a:hover {
@@ -465,16 +493,17 @@ h2{
 
 
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 30%; /* Set the width of the sidebar */
-  background-color: white; /* Black */
-  overflow-x: hidden; /* Disable horizontal scroll */
+  height: 100%; 
+  width: 360px;
+  background-color: white; 
+  overflow-x: hidden; 
   padding-top: 20px;
   top: 0;
   left: 0;
   position: fixed;
   z-index: 1;
-  border-right: solid 1px hwb(252 18% 38% / 0.1)
+  /*
+  border-right: solid 1px hwb(252 18% 38% / 0.1)*/
 }
 
 .sidenav h2{
@@ -557,6 +586,52 @@ div.desc {
   color: #452f9f;
 }
 
+/*-------------------------DropDown Nav------------------------*/
+/* Dropdown Button */
+.dropbtn {
+  background-color: white;
+  color: #452f9f;
+  padding: 16px;
+  font-size: 24px;
+  border: none;
+}
+
+.navDropdown {
+  margin-left: 24px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown 
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
 /*----------------------------------------Media----------------------------------------------*/
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@
