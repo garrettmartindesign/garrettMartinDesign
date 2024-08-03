@@ -166,7 +166,11 @@
 }
 
 .main {
+  width: 900px;
   margin: auto;
+  margin-left: 32%;
+  height: 100%;
+  padding: 40px;
   margin-bottom: 24px;
   height: 100%;
 }
@@ -175,20 +179,12 @@ a {
   text-decoration: none;
 }
 
-#sideNavHome {
-  background-color: white;
-}
-
-#sideNavHome .navAccordion {
-  background-color: white;
-}
-
 body {
   font-family: "Poppins";
-  background-color: ;
+  background-color: #fafafa;
 }
 
-h2{
+h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -198,36 +194,32 @@ h2{
   line-height: 40px;
 }
 
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #464646;
+  font-size: 18px;
+  text-align: left;
+  line-height: 20px;
+}
+
 .logoImg {
   width: 100%;
-  margin-left: 24px;
   height: 100px;
   display: flex;
   align-items: center;
 }
 
-.logoImg div {
-  margin-left: 8px;
-  
-}
-
 .logo {
   width: 80px;
-  margin-right: 24px;
-  float: left;
+  padding: 16px;
   }
-
-
 
 .portrait img{
   width: 80px;
 }
 
-.meBrief {
-  width: 100%;
-  margin-top: 8px;
-  
-}
 
 .aboutme {
   width 360px;
@@ -264,6 +256,7 @@ h2{
   color: #818181;
   display: block;
 }
+
 .introduction h2{
   font-size: 24px;
   line-height: 24px;
@@ -281,14 +274,13 @@ h2{
   display: block;
 }
 
-
 #gallery {
   margin: auto;
 }
 
 /*----------------------------------------Content Accordion----------------------------------------------*/ 
 
-/* Style the buttons that are used to open and close the accordion panel */
+
 .accordion {
   background-color: #eee;
   color: #444;
@@ -300,47 +292,46 @@ h2{
   outline: none;
   transition: 0.4s;
   
-  }
+}
 
-  .caseInfo {
+.caseInfo {
     margin-top: 108px;
-  }
+}
 
 
-  #radiusTop {
+#radiusTop {
       border-radius: 8px 8px 0px 0px;
-    }
+}
 
-  #radiusBottom {
+#radiusBottom {
     border-radius: 0px 0px 8px 8px;
-  } 
+} 
     
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+.active, .accordion:hover {
     background-color: #ccc;
-  }
+}
     
-    /* Style the accordion panel. Note: hidden by default */
-  .panel {
-    padding: 0 24px;
-    margin-left: 16px;
+    
+.panel {
+    width: 100%;
     background-color: white;
     display: none;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-  }
-  .accordion:after {
+}
+
+.accordion:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
       
-    }
+}
     
-  .active:after {
+.active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    }
+}
 
 .titleHeader {
   height: 150px; /* Full-height: remove this if you want "auto" height */
@@ -404,6 +395,7 @@ h2{
 .iaImgs img {
   width: 100%;
 }
+
 .iconGrid img {
   max-width: 50px;
   max-height: 50px;
@@ -414,11 +406,8 @@ h2{
 /*----------------------------------------Side Bar----------------------------------------------*/
 
 .navAccordion {
-  background-color: #eee;
-  color: #444;
+  background-color: transparent;
   cursor: pointer;
-  margin-left: 8px;
-  padding-left: 24px;
   width: 100%;
   text-align: left;
   border: none;
@@ -427,108 +416,104 @@ h2{
   
   }
 
-  .navAccordion h4 {
-    font-size: 24px
-    
+.featuredMenu h4{
+  padding-left: 10px;
   }
 
-  .readMe {
-    padding: 60px;
+.active, .navAccordion:hover {
+  border-bottom: 0.1px solid rgba(70, 47, 159);
+    
+  }
+    
+    
+.navPanel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  box-shadow: 10px 10px insert;
+  border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
   }
 
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .navAccordion:hover {
-    background-color: white;
-    
-    }
-    
-    /* Style the accordion panel. Note: hidden by default */
-  .navPanel {
-    padding: 0 8px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    box-shadow: 10px 10px insert;
-    border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
-  }
-
-  .navAccordion {
-    background-color: white;
-    font-size: 28px;
-    
+.navAccordion:after {
+  content: none;
   }
     
-  .navAccordion:after {
-    content: none;
+.active, .navAccordion:hover {
+  color: #452f9f;
   }
     
-  .active, .navAccordion:hover {
-    color: #452f9f;
+.sidenav li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 18px;
   }
     
-  .sidenav li {
-    text-decoration: none;
-    list-style: none;
-    font-size: 24;
-    
+.navPanel {
+  background-color: #fafafa;
+  border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
+  border-top: 0.3px solid rgba(70, 47, 159, 0.119);
+  box-shadow: #464646; 
   }
     
-  .navPanel {
-    background-color: #fafafa;
-    border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
-    border-top: 0.3px solid rgba(70, 47, 159, 0.119);
-    box-shadow: #464646;
-    
-  }
-    
-  .navPanel a {
-    color: #464646;
+.navPanel a {
+  color: #464646;
    
   }
     
-  .navPanel a:hover {
-    color: #452f9f;
+.navPanel a:hover {
+  color: #452f9f;
   }
 
 
 .sidenav {
+  background-color: #fafafa;
   height: 100%; 
-  width: 360px;
-  background-color: white; 
-  overflow-x: hidden; 
-  padding-top: 20px;
+  width: 232px;
+  overflow-x: hidden;
   top: 0;
   left: 0;
   position: fixed;
   z-index: 1;
-  /*
-  border-right: solid 1px hwb(252 18% 38% / 0.1)*/
+  border-right: solid 1px hwb(252 18% 38% / 0.1)
 }
 
-.sidenav h2{
+.sidenav h4{
+  color: #818181;
   text-align: left;
 }
 
+.topLinks {
+  padding: 16px;
+}
 
 
+.socialMedia {
+  width: 100%;
+  display: flex;
+  padding: 0px 6px;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.socialMedia img {
+  width: 60px;
+  padding: 16px;
   
-/* The navigation menu links */
+}
 
-  
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.navLinks {
+ width: 100%;
+}
+
+.sidenav h4:hover {
   color: #452f9f;
 }
-  
-/* Style page content */
-.main {
-  height: 100%;
-  width: 900px;
-  padding: 0px 40px;
-  font-family: "Poppins";
-  margin-left: 32%;
-  
+
+.sidenav a:hover {
+  color: #452f9f;
 }
 /*----------------Gallery----------------------*/
 
