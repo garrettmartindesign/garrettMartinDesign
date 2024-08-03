@@ -220,7 +220,7 @@ h4 {
 
 
 .aboutme {
-  width 360px;
+  width: 360px;
   background-color: white;
   opacity: 95%;
   border: #464646;
@@ -356,7 +356,7 @@ h4 {
 
 .textusda h3 {
   font-family: "Abril Fatface", serif;
-  text-align: ;
+  text-align: left;
 
 }
 
@@ -473,7 +473,7 @@ h4 {
   left: 0;
   position: fixed;
   z-index: 1;
-  border-right: solid 1px hwb(252 18% 38% / 0.1);
+  border-right: solid 1px rgb(69, 47, 159, 0.1);
   
 }
 
