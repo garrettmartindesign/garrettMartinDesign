@@ -161,18 +161,15 @@
 /*----------------------------------------Body----------------------------------------------*/ 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  height: 100%;
+  flex-direction: column;
 }
 
-.main {
-  width: 900px;
-  margin: auto;
-  margin-left: 32%;
-  height: 100%;
-  padding: 40px;
-  margin-bottom: 24px;
-  height: 100%;
+.homeContent {
+  width: 100%;
+}
+
+.homeContent img {
+  width: 100%;
 }
 
 a {
@@ -475,7 +472,8 @@ h4 {
   left: 0;
   position: fixed;
   z-index: 1;
-  border-right: solid 1px hwb(252 18% 38% / 0.1)
+  border-right: solid 1px hwb(252 18% 38% / 0.1);
+  
 }
 
 .sidenav h4{
@@ -515,6 +513,16 @@ h4 {
 .sidenav a:hover {
   color: #452f9f;
 }
+
+/*---------Homepage -----------------*/
+
+.funnyImg {
+  width: 500px;
+}
+
+
+
+
 /*----------------Gallery----------------------*/
 
 
