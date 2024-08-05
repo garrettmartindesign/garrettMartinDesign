@@ -194,24 +194,20 @@ h2 {
 
 h4 {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   color: #464646;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
-  line-height: 20px;
 }
 
 .logoImg {
   width: 100%;
-  height: 100px;
-  display: flex;
-  align-items: center;
+  margin: 32px;
 }
 
 .logo {
-  width: 80px;
-  padding: 16px;
+  max-width: 68px;
   }
 
 .portrait img{
@@ -411,16 +407,33 @@ h4 {
   border: none;
   outline: none;
   transition: 0.4s;
-  
+  border-radius: 8px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
   }
 
-.featuredMenu h4{
-  padding-left: 10px;
-  }
+.topLinks div {
+  border-radius: 8px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+}  
+
+.topLinks div:hover {
+  color: #452f9f;
+  background-color: #f0f0f0;
+}
+
+.navLinks {
+  margin: 24px;
+}
 
 .active, .navAccordion:hover {
-  border-bottom: 0.1px solid rgba(70, 47, 159);
-    
+  color: #452f9f;
+  background-color: #f0f0f0;  
   }
     
     
@@ -431,7 +444,13 @@ h4 {
   transition: max-height 0.2s ease-out;
   box-shadow: 10px 10px insert;
   border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
+  background-color: #ebebeb;
   }
+
+.navPanel-contents li:hover {
+  color: #452f9f;
+  background-color: #f0f0f0;  
+}  
 
 .navAccordion:after {
   content: none;
@@ -441,10 +460,16 @@ h4 {
   color: #452f9f;
   }
     
-.sidenav li {
+.navPanel li {
   text-decoration: none;
   list-style: none;
-  font-size: 18px;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 40px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  margin-left: -36px;  
   }
     
 .navPanel {
@@ -452,13 +477,14 @@ h4 {
   border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
   border-top: 0.3px solid rgba(70, 47, 159, 0.119);
   box-shadow: #464646; 
+  width: 100%;
   }
     
 .navPanel a {
   color: #464646;
    
   }
-    
+
 .navPanel a:hover {
   color: #452f9f;
   }
@@ -467,7 +493,7 @@ h4 {
 .sidenav {
   background-color: #fafafa;
   height: 100%; 
-  width: 232px;
+  width: 224px;
   overflow-x: hidden;
   top: 0;
   left: 0;
@@ -481,11 +507,6 @@ h4 {
   color: #818181;
   text-align: left;
 }
-
-.topLinks {
-  padding: 16px;
-}
-
 
 .socialMedia {
   width: 100%;
@@ -501,14 +522,6 @@ h4 {
   width: 60px;
   padding: 16px;
   
-}
-
-.navLinks {
- width: 100%;
-}
-
-.sidenav h4:hover {
-  color: #452f9f;
 }
 
 .sidenav a:hover {
@@ -577,8 +590,8 @@ div.desc {
   color: #452f9f;
 }
 
-/*-------------------------DropDown Nav------------------------*/
-/* Dropdown Button */
+/*-------------------------DropDown Nav-----------
+/* Dropdown Button 
 .dropbtn {
   background-color: white;
   color: #452f9f;
@@ -591,13 +604,13 @@ div.desc {
   margin-left: 24px;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* The container <div> - needed to position the dropdown content 
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
+/* Dropdown Content (Hidden by Default) 
 .dropdown-content {
   display: none;
   position: absolute;
@@ -607,7 +620,7 @@ div.desc {
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Links inside the dropdown 
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -615,14 +628,15 @@ div.desc {
   display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* Change color of dropdown links on hover 
 .dropdown-content a:hover {background-color: #ddd;}
 
-/* Show the dropdown menu on hover */
+/* Show the dropdown menu on hover 
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /*----------------------------------------Media----------------------------------------------*/
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) 
+------------*/
