@@ -161,16 +161,6 @@
 /*----------------------------------------Body----------------------------------------------*/ 
 .flex-container {
   display: flex;
-  flex-direction: column;
-}
-
-.homeContent {
-  width: 100%;
-}
-
-.homeContent img {
-  width: 100%;
-
 }
 
 a {
@@ -191,6 +181,8 @@ h2 {
   text-align: left;
   line-height: 40px;
 }
+
+
 
 h4 {
   font-family: "Poppins", sans-serif;
@@ -244,63 +236,6 @@ h4 {
   text-align: left;
 }
 
-
-.aboutme {
-  width: 360px;
-  background-color: white;
-  opacity: 95%;
-  border: #464646;
-  margin-top: 130px;
-  border-radius: 16px;
-}
-
-.heyyall {
-  width: 600px;
-  margin: auto;
-  padding: 40px 24px;
-}
-
-.introductionSplash h2 {
-  font-size: 24px;
-  line-height: 24px;
-  color: #452f9f;
-  margin-left: 16px;
-  padding-left: 16px;
-}
-
-.introductioSplash h3 {
-  text-align: left;
-}
-
-.introductionSplash a {
-  padding: 6px 8px 6px 0px;
-  font-family: "Poppins";
-  text-decoration: none;
-  font-size: normal;
-  color: #818181;
-  display: block;
-}
-
-.introduction h2{
-  font-size: 24px;
-  line-height: 24px;
-  color: #fafafa;
-  margin-left: 16px;
-  padding-left: 16px;
-}
-
-.introduction a {
-  padding: 6px 8px 6px 0px;
-  font-family: "Poppins";
-  text-decoration: none;
-  font-size: normal;
-  color: #818181;
-  display: block;
-}
-
-#gallery {
-  margin: auto;
-}
 
 /*----------------------------------------Content Accordion-----------Hidden-----------------------
 
@@ -451,16 +386,16 @@ h4 {
   padding: 8px;
   display: flex;
   align-items: center;
-}  
+  }  
 
 .topLinks div:hover {
   color: #452f9f;
   background-color: #f0f0f0;
-}
+  }
 
 .navLinks {
   margin: 24px;
-}
+  }
 
 .active, .navAccordion:hover {
   color: #452f9f;
@@ -481,7 +416,7 @@ h4 {
 .navPanel-contents li:hover {
   color: #452f9f;
   background-color: #f0f0f0;  
-}  
+  }  
 
 .navAccordion:after {
   content: none;
@@ -521,27 +456,29 @@ h4 {
   }
 
 
-.sidenav {
+nav {
   background-color: #fafafa;
   height: 100%; 
   width: 224px;
   overflow-x: hidden;
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
   z-index: 1;
   border-right: solid 1px rgb(69, 47, 159, 0.1);
   
-}
+  }
+
+
 
 .sidenav h4{
   color: #818181;
   text-align: left;
-}
+  }
 
 .sidenav h4:hover{
   color: #452f9f;
-}
+  }
 
 .socialMedia {
   width: 100%;
@@ -551,21 +488,66 @@ h4 {
   position: absolute;
   bottom: 0;
   left: 0;
-}
+  }
 
 .socialMedia img {
   width: 60px;
   padding: 16px;
   
-}
+  }
 
 .sidenav a:hover {
   color: #452f9f;
 }
 
-/*---------Homepage -----------------*/
+/*---------Homepage -------------------------------------------------------*/
 
+main {
+  width: 1056px;
+  height: 100%;
+  padding: 80px;
+  padding-top: 28px;
+  margin-left: 224px;
+}
 
+.homeContent {
+  margin: auto;
+}
+
+.homeContent h1 {
+  font-family: "Poppins", sans-serif;
+  color: #464646;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 32px;
+  
+}
+
+.subHeaderColor {
+  color: #919191;
+  font-style: normal;
+}
+
+.headerDescription {
+  width: 628px;
+}
+
+.headerButtons div {
+  display: inline;
+}
+
+.hederButtons button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  
+}
+button {
+  border-style: none;
+  border-radius: 50px;
+  width: 144px;
+  height: 44px;
+}
 
 
 
