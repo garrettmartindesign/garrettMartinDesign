@@ -563,7 +563,7 @@ nav {
 main {
   flex-grow: 1; /* Allow main content to take up remaining space */
   height: 100%;
-  margin-left: 240px;
+  margin-left: 224px;
   display: flex;
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center horizontally */
