@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta name="author" content="Garrett Martin">    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="css/stylesheet.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -27,7 +28,7 @@
         </div>
         <div class="navLinks">
             <div class="topLinks">
-                <div><h4>Home</h4></div>
+                <div id="currentPage"><h4>Home</h4></div>
                 <div><h4>About Me</h4></div>
                 <div><h4>Stack</h4></div>
                 <div><h4>Contact</h4></div>
@@ -45,13 +46,13 @@
             </div>
             
         </div>
-        <!-------------Social Media------------------Hidden---------------
+        <!-------------Social Media------------------Hidden------------
         <div class="socialMedia">
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
         </div>
-        ---->
+        ------->
         
     </nav>    
 <!--Page Content----------------------------------------------------------------->
@@ -89,20 +90,103 @@
             <p>Design thinking based on user-centric design thinking from years of user empathy experiences. </p>
         </section>
         <section class="services-container">
-            <div><h3>My Services</h3></div>
+            <div>
+                <h3>My Services</h3>
+            </div>
             <div class="services">
-                <div class="serviceTile"></div>
-                <div class="serviceTile"></div>
-                <div class="serviceTile"></div>
-                <div class="serviceTile"></div>
+                <div class="tile">
+                    <div class="tileHeader">
+                        <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                    </div>
+
+                    <div class="tileSubheader">
+                        <h4> Web Design </h4>
+                    </div>
+                    <div class="tile-info">
+                        <p>Designed in figma first, after approval, development through wix, framer, or visual studio code.  </p>
+                    </div>
+
+                </div>     
+                <div class="tile">
+
+                    <div class="tileHeader">
+                        <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                    </div>
+
+                    <div class="tileSubheader">
+                        <h4> Mobile App Design </h4>
+                    </div>
+                    <div class="tile-info">
+                        <p>With a mobile first approach, easily translates to efficent reposive design.  </p>
+                    </div>
+
+                </div>
+                <div class="tile">
+
+                    <div class="tileHeader">
+                        <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                    </div>
+
+                    <div class="tileSubheader">
+                        <h4> Information Architecture </h4>
+                    </div>
+                    <div class="tile-info">
+                        <p>With so much information on our sites, having the tools better undersatnd the best organization and browsing for your users. </p>
+                    </div>
+
+                </div>
+                <div class="tile">
+
+                    <div class="tileHeader">
+                        <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                    </div>
+
+                    <div class="tileSubheader">
+                        <h4> Graphc Design </h4>
+                    </div>
+                    <div class="tile-info">
+                        <p>My background is in graphic design wehre my focuses were on web design, design systems, and photography.  </p>
+                    </div>
+
+                </div>      
             </div>
         </section>
-        <section class="services-container">
-            <div><h3>Testomonials</h3></div>
-            <div class="services">
-                <div class="serviceTile"></div>
-                <div class="serviceTile"></div>
-            </div>
+        <section class="tesimonial-container">
+            <section class="testimonial-container">
+                <div>
+                    <h3>Testimonials</h3>
+                </div>
+                <div class="services">
+                    <div class="tile">
+    
+                        <div class="tileHeader">
+                            <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                        </div>
+    
+                        <div class="tileSubheader">
+                            <h4> Pablo Villanvicencio </h4>
+                        </div>
+                        <div class="tile-info">
+                            <p>"Friendly, approachable, and has an eye for not just good design but visually as well."  </p>
+                        </div>
+    
+                    </div>     
+                    <div class="tile">
+    
+                        <div class="tileHeader">
+                            <img src="x" alt="web design icon" width="34px" height="32px" padding="4px">
+                        </div>
+    
+                        <div class="tileSubheader">
+                            <h4> Blue Sky Banenrs </h4>
+                        </div>
+                        <div class="tile-info">
+                            <p>"Great team member! Versed in mainy subjects, really knows have to connect with constomers as well." </p>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>               
         </section>      
     </main>
 
@@ -115,9 +199,9 @@
     </div>
 </footer>
 <!--Script------------------------------------------------------------------------------------>    
+
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<script src="script.js"></script>    
+<script src="js/script.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,5 @@
+
+
 /*--------------------Side Bar Nav Accordion--------------------------*/
     var acc = document.getElementsByClassName("navAccordion");
     var i;
@@ -40,8 +42,6 @@
             });
         }, 1500); // Change the word every 2 seconds
     });
-
-    
 
     
 

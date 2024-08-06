@@ -307,6 +307,10 @@ h4 {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
+.homeIcon {
+  content: "\";
+}
+
 .titleHeader {
   height: 150px; /* Full-height: remove this if you want "auto" height */
   width: 100%;
@@ -378,7 +382,14 @@ h4 {
 }
 
 /*----------------------------------------Side Bar----------------------------------------------*/
+#currentPage {
+  background-color: #f0f0f0;
 
+}
+
+#currentPage h4 {
+  color: #452f9f;
+}
 .navAccordion {
   background-color: transparent;
   cursor: pointer;
@@ -399,11 +410,11 @@ h4 {
   height: 40px;
   padding: 8px;
   display: flex;
+  margin: 4px 0px;
   align-items: center;
   }  
 
 .topLinks div:hover {
-  color: #452f9f;
   background-color: #f0f0f0;
   }
 
@@ -529,6 +540,11 @@ main {
 
 .header {
   margin: auto;
+  margin-top: 18px;
+}
+
+.header div {
+  margin-bottom: 40px;
 }
 
 .header h1 {
@@ -577,15 +593,20 @@ button:hover {
   color: white;
 }
 
-.titleHome, .headerDescription, .headerButtons, .featureProject {
-  margin-bottom: 40px;
+section, .featureProject {
+  margin-bottom: 80px;
 }
+
+.featureProject {
+  margin-top: 40px;
+}
+
 .featureProject {
   width: 100%;
-  height: 300px;
+  height: 400px;
   overflow: hidden;
   position: relative;
-  border-radius: 8px;
+  border-radius: 4px;
   
 }
 
@@ -620,7 +641,7 @@ button:hover {
   margin: auto;
 }
 
-.services-container {
+.services-container, .tesimonial-container {
   width: 628px;
   margin: auto;
 }
@@ -632,21 +653,54 @@ button:hover {
   gap: 8px; /* Adjust gap as needed */
 }
 
-.serviceTile {
+
+.tile {
   background-color: #f0f0f0; /* Example background */
   width: 350px;
-  height: 164px;
-  text-align: center;
+  height: 200px;
+  padding: 16px;
+  text-align: left;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .whyMe {
   margin-bottom: 40px;
 }
 
-.services-container {
+.services-container, .tesimonial-container {
   margin-bottom: 40px;
+  position: relative;
+  
+}
+
+.testimonialsTiles {
+
+}
+
+.tile div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  
+  
+}
+
+.tileHeader {
+  border-bottom: 0.5px #46464621 solid;
+  border-width: 90%;
+}
+
+.tileSubheader {
+  margin-top: -10px;
+}
+
+.tile-info {
+  margin-top: -10px;
+}
+
+.tile-info p {
+  font-size: 14px;
 }
 
 /*----------------Gallery----------------------*/
@@ -706,10 +760,11 @@ div.desc {
 }
 
 footer {
-  width: 1200px;
+  width: 85%;
   height: 60px;
   float: right;
   margin-top: 20px;
+  margin-right: 16px;
 
 }
 
