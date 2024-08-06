@@ -43,6 +43,4 @@
         }, 1500); // Change the word every 2 seconds
     });
 
-    
-
-    
+   

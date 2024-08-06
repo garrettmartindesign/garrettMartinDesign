@@ -160,12 +160,40 @@
 
 
 /*----------------------------------------Body----------------------------------------------*/ 
+.menu-button {
+  display: none; /* Initially hidden on large screens */
+  background-color: #452f9f; /* Example background color */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: fixed; /* Stay in place even when scrolling */
+  top: 20px; /* Adjust positioning as needed */
+  right: 20px;
+  z-index: 2; /* Ensure the button is above other content */
+}
+
 .flex-container {
   display: flex;
 }
 
 a {
   text-decoration: none;
+}
+
+.menu-button {
+  display: none; /* Hide on desktop */
+}
+
+/* Style for Back Button (Initially hidden) */
+.back-button {
+    /* ... your styles ... */
+    display: none; /* Hide initially */
+}
+
+.back-button:not(.hidden) { /* Button will show when .hidden is not present */
+    display: block;
 }
 
 body {
@@ -216,7 +244,13 @@ h4 {
 
 .topLinks, .logoImg{
   padding-bottom: 20px;
+  
 }
+
+.topLinks span {
+  margin-right: 8px;
+}
+
 
 .featuredMenu {
   padding-top: 20px;
@@ -307,9 +341,6 @@ h4 {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
-.homeIcon {
-  content: "\";
-}
 
 .titleHeader {
   height: 150px; /* Full-height: remove this if you want "auto" height */
@@ -382,6 +413,7 @@ h4 {
 }
 
 /*----------------------------------------Side Bar----------------------------------------------*/
+
 #currentPage {
   background-color: #f0f0f0;
 
@@ -524,6 +556,7 @@ nav {
 .sidenav a:hover {
   color: #452f9f;
 }
+
 
 /*---------Homepage -------------------------------------------------------*/
 
@@ -674,9 +707,6 @@ section, .featureProject {
   
 }
 
-.testimonialsTiles {
-
-}
 
 .tile div {
   width: 100%;
@@ -827,5 +857,182 @@ footer {
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 /*----------------------------------------Media----------------------------------------------*/
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) 
-------------*/
+/* Default Icon Size (Desktop) */
+.icon {
+  width: 18px; /* Or your preferred default size */
+  height: auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .icon {
+    width: 16px; /* Slightly smaller for tablets */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .icon {
+    width: 16px; /* Even smaller for mobile */
+  }
+}
+
+
+/*--Media Q header-------------------------------------------------------------*/
+
+/* Small screens (around mobile phone sizes) */
+@media (max-width: 767px) {
+  main {
+      margin-left: 0; /* Remove left margin on small screens */
+      margin-top: 40px;
+  }
+  nav {
+    background-color: #fafafa;
+    height: 80px;
+    width: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: solid 1px rgb(69, 47, 159, 0.1);
+  }
+  .menu-button {
+    display: inline;
+    background-color: #452f9f; /* Example background color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed; /* Stay in place even when scrolling */
+    top: 20px; /* Adjust positioning as needed */
+    right: 20px;
+    z-index: 1; /* Ensure the button is above other content */
+  }
+
+  .headerDescription, .whyMe, .services-container, .tesimonial-container {
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .header h1 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  .headerButtons div {
+      display: block; /* Stack buttons vertically */
+      margin: 10px auto; /* Center buttons */
+  }
+
+  .services {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+
+  .tile {
+      width: 100%; /* Make tiles full width */
+  }
+
+  /* Add more styles as needed for specific elements */
+}
+
+
+
+/* Medium screens (around tablet sizes) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  main {
+      margin-left: 0; /* Remove left margin on medium screens */
+      margin-top: 40px;
+  }
+
+  nav {
+    background-color: #fafafa;
+    height: 80px;
+    width: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: solid 1px rgb(69, 47, 159, 0.1);
+  }
+  .menu-button {
+    display: inline;
+    background-color: #452f9f; /* Example background color */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: fixed; /* Stay in place even when scrolling */
+    top: 20px; /* Adjust positioning as needed */
+    right: 20px;
+    z-index: 1; /* Ensure the button is above other content */
+  }
+
+  .logoImg {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+    
+  }
+  
+  .topLinks, .logoImg{
+    padding-bottom: 0;
+    
+    
+  }
+  
+  .topLinks span {
+    margin-right: 8px;
+  }
+  
+  
+  .featuredMenu {
+    padding-top: 20px;
+  }
+  
+  .logo {
+    max-width: 34px;
+    }
+  
+  .portrait img{
+    width: 80px;
+  }
+  
+  .navTitle {
+    line-height: 8px;
+  }
+  .navTitle h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #464646;
+    font-size: 14px;
+    text-align: left;
+  }
+  .navTitle h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #464646;
+    font-size: 14px;
+    text-align: left;
+  }
+  
+  
+  .navLinks {
+    display: none;
+  }
+
+
+  .headerDescription, .whyMe, .services-container, .tesimonial-container {
+      width: 80%; /* Adjust width for medium screens */
+  }
+  
+  .header h1 {
+      font-size: 28px; /* Adjust font size for medium screens */
+  }
+
+  /* Add more styles as needed for specific elements */
+}
+
