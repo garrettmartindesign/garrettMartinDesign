@@ -170,7 +170,6 @@ a {
 
 body {
   font-family: "Poppins";
-  background-color: #fafafa;
   padding: 0;
   margin: 0;
 }
@@ -456,7 +455,6 @@ h4 {
 .navPanel {
   background-color: #fafafa;
   border-bottom: 0.3px solid rgba(70, 47, 159, 0.119);
-  border-top: 0.3px solid rgba(70, 47, 159, 0.119);
   box-shadow: #464646; 
   width: 100%;
   }
@@ -472,8 +470,8 @@ h4 {
 
 
 nav {
-  background-color: #fafafa; 
-  height: 1080px;
+  background-color: #fafafa;
+  height: 100%;
   width: 224px;
   overflow-x: hidden;
   position: fixed;
@@ -525,8 +523,8 @@ main {
   display: flex;
   flex-direction: column; /* Align items vertically */
   justify-content: center; /* Center horizontally */
-  padding: 20px;
-  margin-top: 20px;
+  padding: 24px;
+  background-color: white;
 }
 
 .header {
@@ -568,6 +566,10 @@ button {
   border-radius: 50px;
   width: 144px;
   height: 44px;
+}
+
+.callButton button {
+  background-color: #bcbcbc;
 }
 
 button:hover {
