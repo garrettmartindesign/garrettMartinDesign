@@ -43,4 +43,11 @@
         }, 1500); // Change the word every 2 seconds
     });
 
-   
+    document.addEventListener("DOMContentLoaded", function() {
+        const menuToggle = document.getElementById("#menuToggle");
+        const navLinks = document.getElementById(".navLinks");
+    
+        menuToggle.addEventListener("click", function() {
+            navLinks.classList.toggle("open"); 
+        });
+    });
