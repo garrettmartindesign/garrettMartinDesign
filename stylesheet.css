@@ -186,9 +186,17 @@ h2 {
   color: white;
   font-size: 2em;
   text-align: left;
-  line-height: 40px;
+
 }
 
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #464646;
+  font-size: 18px;
+  text-align: left;
+}
 
 
 h4 {
@@ -628,6 +636,7 @@ button:hover {
   height: 164px;
   text-align: center;
   border: 1px solid #ddd;
+  border-radius: 8px;
 }
 
 .whyMe {
