@@ -170,7 +170,14 @@ a {
 body {
   font-family: "Poppins";
   background-color: #fafafa;
+  padding: 0;
+  margin: 0;
 }
+
+.titleChange {
+    display: inline-block; /* Allow for transformations */
+}
+
 
 h2 {
   font-family: "Poppins", sans-serif;
@@ -457,8 +464,8 @@ h4 {
 
 
 nav {
-  background-color: #fafafa;
-  height: 100%; 
+  background-color: #fafafa; 
+  height: 1080px;
   width: 224px;
   overflow-x: hidden;
   position: fixed;
@@ -485,7 +492,6 @@ nav {
   display: flex;
   padding: 0px 6px;
   justify-content: space-between;
-  position: absolute;
   bottom: 0;
   left: 0;
   }
@@ -503,11 +509,13 @@ nav {
 /*---------Homepage -------------------------------------------------------*/
 
 main {
-  width: 1056px;
+  flex-grow: 1; /* Allow main content to take up remaining space */
   height: 100%;
-  padding: 80px;
-  padding-top: 28px;
-  margin-left: 224px;
+  margin-left: 240px;
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center horizontally */
+  padding: 20px;
 }
 
 .homeContent {
@@ -549,6 +557,10 @@ button {
   height: 44px;
 }
 
+button:hover {
+  background-color: #452f9f;
+  color: white;
+}
 
 
 /*----------------Gallery----------------------*/

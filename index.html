@@ -43,95 +43,45 @@
                 </ul>
                 </div>    
             </div>
+            
         </div>
-        
+        <!-------------Social Media------------------Hidden---------------
         <div class="socialMedia">
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
             <a href="x"><img src="/img/logo/logos/after effects logo.png" alt="image"></a>
         </div>
+        ---->
+        
     </nav>    
 <!--Page Content----------------------------------------------------------------->
     <main >
         <div class="homeContent">
             <h1>Hi, I'm Garrett! <br>
-                <em class="subHeaderColor"> a designer & solutions specialist</em>
+                <em class="subHeaderColor"> a designer & <span class="titleChange">solutions specialist</span></em>
             </h1>
             <div class="headerDescription">
-                <p><em>Desiging tomorrow's experiences together</em> Fluent in visual design, team collaboration, and wry 😄</p>
+                <p><em>Desiging tomorrow's experiences together.</em> Fluent in visual design, team collaboration, and wry 😄</p>
             </div>
+
             <div class="headerButtons">
-                <button class="firstButton">
-                    <p>Phone</p>
-                </button>
-                <button class="secondButton">
-                    <p>Email</p>
-                </button>
-            </div>
+                <div class="headerButtonTop">
+                    <button>
+                        <p>Phone</p>
+                    </button>
+                </div>
+                <div class="headerButtonBottom">
+                    <button >
+                        <p>Email</p>
+                    </button>
+                </div>
+            </div>    
         </div>   
     </main>  
 </div>
 <!--Script------------------------------------------------------------------------------------>    
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-        
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-            } else {
-            panel.style.display = "block";
-            }
-        });
-    }
-    var acc = document.getElementsByClassName("accordion",);
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-            } else {
-             panel.style.maxHeight = panel.scrollHeight + "px";
-        }
-    });
-    }
-<!----Script--------------------------------------Side Bar Nav---------------------------------->
-    var acc = document.getElementsByClassName("navAccordion");
-    var i;
-        
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var navPanel = this.nextElementSibling;
-        if (navPanel.style.display === "block") {
-            navPanel.style.display = "none";
-            } else {
-            navPanel.style.display = "block";
-            }
-        });
-    }
-    var acc = document.getElementsByClassName("navAccordion",);
-    var i;
-
-    for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var navPanel = this.nextElementSibling;
-        if (navPanel.style.maxHeight) {
-            navPanel.style.maxHeight = null;
-            } else {
-             navPanel.style.maxHeight = navPanel.scrollHeight + "px";
-        }
-    });
-    }
-
-</script>    
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="/script.js"></script>    
 
 </body>
 </html>
