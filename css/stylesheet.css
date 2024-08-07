@@ -1,10 +1,15 @@
 /*----------------------------------------Main Fonts & Color----------------------------------------------
-  Color
+  Color & Type
     h1= Major
     h2= Poppins Bold
     p1= Poppins reg
+
     dark purple = #452f9f
     sky blue = #4bbbf2
+    just peach = #d9582e
+    designer yellow = #f2cf33
+
+    linear-gradient(to top, #452f9f, #d9582e, #f2cf33)
 
 .poppins-thin {
     font-family: "Poppins", sans-serif;
@@ -245,7 +250,8 @@ h4 {
 
 .logo {
   max-width: 68px;
-}
+  height: 40px;
+  }
 
 .portrait img{
   width: 80px;
@@ -271,6 +277,58 @@ h4 {
   text-align: left;
 }
 
+/*--The Stack----------------------------------------------------------*/
+
+
+.grid-container {
+  width: 628px;
+  height: auto;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px auto;
+  
+}
+
+.skillTile {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.grid-container div {
+text-align: left;
+}
+
+#skillsHeader {
+  
+  width: 628px;
+  margin: 0px auto;
+  margin-bottom: 40px;
+
+}
+
+.micorMe {
+  width: 628px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.aboutme {
+  width: 628px;
+  margin: 20px auto ;
+
+}
+
+.values {
+  width: 628px;
+  margin: 0px auto;
+}
+.valueRow h2 {
+  color: #464646;
+}
 
 /*----------------------------------------Content Accordion-----------Hidden-----------------------
 
@@ -614,11 +672,11 @@ button:hover {
   color: white;
 }
 
-section, .featureProject {
+section, .featureProject, .featurePortrait {
   margin-bottom: 80px;
 }
 
-.featureProject {
+.featureProject, .featurePortrait {
   margin-top: 40px;
 }
 
@@ -629,6 +687,18 @@ section, .featureProject {
   position: relative;
   border-radius: 4px;
   
+}
+
+.featurePortrait {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.featurePortrait img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .featureProject img {
@@ -683,21 +753,16 @@ section, .featureProject {
   text-align: left;
   border: 1px solid #ddd;
   border-radius: 4px;
-  margin-bottom: 8px;
 }
 
 .whyMe {
   margin-bottom: 40px;
 }
 
-.services-container {
+.services-container, .tesimonial-container {
   margin-bottom: 40px;
-  margin: 0 auto;
-  width: 628px;
-  display: grid;
-  grid-template-rows: 50% 50%;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  position: relative;
+  
 }
 
 
@@ -705,15 +770,8 @@ section, .featureProject {
   width: 100%;
   height: auto;
   display: flex;
-
   
   
-}
-
-#skillsHeader {
-  width: 628px;
-  margin: 0 auto;
-  margin-bottom: 24px;
 }
 
 .tileHeader {
@@ -952,6 +1010,24 @@ footer {
     background-color: #452f9f;
     color: white;
   }
+  .grid-container {
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+
+  }
+  .skillTile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #skillsHeader {
+    margin: 0px auto;
+    margin-bottom: 40px;
+  
+}
 }
 
 
@@ -1051,6 +1127,28 @@ footer {
   
   .navLinks {
     display: none;
+  }
+  .grid-container {
+    margin: 0px auto;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+  }
+  .skillTile {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .skillTile div {
+    display: flex;
+    text-align: left;
+  }
+  
+  #skillsHeader {
+    margin: 0px auto;
+    margin-bottom: 40px;
+  
   }
   
 }
@@ -1175,4 +1273,10 @@ footer {
   }
 
   /* Add more styles as needed for specific elements */
+  .grid-container {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+  }
 }
