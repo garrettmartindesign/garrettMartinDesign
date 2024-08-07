@@ -330,6 +330,20 @@ text-align: left;
   color: #464646;
 }
 
+/*--Stack----------------------------------------*/
+
+#tools {
+  width: 628px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.toolItems img{
+  width: 100%;
+  
+}
+
+
 /*----------------------------------------Content Accordion-----------Hidden-----------------------
 
 
