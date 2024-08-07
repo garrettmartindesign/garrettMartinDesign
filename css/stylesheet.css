@@ -229,8 +229,7 @@ h4 {
   margin-top: 24px;
 }
 
-.topLinks,
-.logoImg {
+.topLinks, .logoImg {
   padding-bottom: 20px;
   
 }
@@ -246,7 +245,7 @@ h4 {
 
 .logo {
   max-width: 68px;
-  }
+}
 
 .portrait img{
   width: 80px;
@@ -684,16 +683,21 @@ section, .featureProject {
   text-align: left;
   border: 1px solid #ddd;
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .whyMe {
   margin-bottom: 40px;
 }
 
-.services-container, .tesimonial-container {
+.services-container {
   margin-bottom: 40px;
-  position: relative;
-  
+  margin: 0 auto;
+  width: 628px;
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
 }
 
 
@@ -701,8 +705,15 @@ section, .featureProject {
   width: 100%;
   height: auto;
   display: flex;
+
   
   
+}
+
+#skillsHeader {
+  width: 628px;
+  margin: 0 auto;
+  margin-bottom: 24px;
 }
 
 .tileHeader {
