@@ -278,34 +278,46 @@ h4 {
 }
 
 /*--The Stack----------------------------------------------------------*/
+#skills-container {
+  margin-bottom: ;
+}
 
-
-.grid-container {
+.grid-container, .stack-grid {
   width: 628px;
-  height: auto;
+  height: a;
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr;
   margin: 0px auto;
+  justify-content: space-between;
   
 }
 
-.skillTile {
+.design-editing {
+  margin-top: -600px;
+}
+
+.skillTile, .stackTile {
   display: flex;
   flex-direction: column;
   
 }
 
-.grid-container div {
+.grid-container, .stack-grid div {
 text-align: left;
 }
 
-#skillsHeader {
+#skillsHeader, .stackHeader {
   
   width: 628px;
   margin: 0px auto;
   margin-bottom: 40px;
 
+}
+
+.stackHeader h2 {
+  color: #464646;
+  font-size: 24px;
 }
 
 .micorMe {
@@ -326,11 +338,10 @@ text-align: left;
   width: 628px;
   margin: 0px auto;
 }
+
 .valueRow h2 {
   color: #464646;
 }
-
-/*--Stack----------------------------------------*/
 
 #tools {
   width: 628px;
@@ -342,6 +353,7 @@ text-align: left;
   width: 100%;
   
 }
+
 
 
 /*----------------------------------------Content Accordion-----------Hidden-----------------------
