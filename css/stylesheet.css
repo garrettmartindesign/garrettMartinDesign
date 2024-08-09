@@ -279,23 +279,57 @@ h4 {
 
 /*--The Stack----------------------------------------------------------*/
 #skills-container {
-  margin-bottom: ;
+  margin-bottom: 20px;
 }
 
-.grid-container, .stack-grid {
+.grid-container  {
   width: 628px;
-  height: a;
+  height: auto;
   display: grid;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
   margin: 0px auto;
   justify-content: space-between;
   
 }
 
-.design-editing {
-  margin-top: -600px;
+.stack-grid-1 {
+  width: 628px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  margin: 0px auto;
+  justify-content: space-between;
+  
 }
+
+.stack-grid-2 {
+  width: 628px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  margin: 0px auto;
+  justify-content: space-between;
+  
+}
+
+.stack-grid-3 {
+  width: 628px;
+  height: auto;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 1fr;
+  grid-auto-rows: auto;
+  margin: 0px auto;
+  justify-content: space-between;
+  
+}
+
 
 .skillTile, .stackTile {
   display: flex;
@@ -343,10 +377,10 @@ text-align: left;
   color: #464646;
 }
 
-#tools {
-  width: 628px;
-  margin: 40px auto;
-  display: flex;
+
+.toolItem {
+  margin-bottom: 80px;
+  padding: 16px 24px 16px 0px;
 }
 
 .toolItems img{
@@ -355,6 +389,10 @@ text-align: left;
 }
 
 
+.toolHeader {
+  margin-top: 24px;
+  margin-bottom: -16px;
+}
 
 /*----------------------------------------Content Accordion-----------Hidden-----------------------
 
@@ -965,7 +1003,7 @@ footer {
 /*--Media Q header-------------------------------------------------------------*/
 
 /* Small screens (around mobile phone sizes) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   main {
     width: 100%;
     margin-left: 0; /* Remove left margin on small screens */
@@ -1037,17 +1075,53 @@ footer {
     color: white;
   }
   .grid-container {
-    width: 100%;
-    height: 300px;
-    margin: 0px auto ;
+    width: 80%;
+    margin: 0px auto;
     display: grid;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
 
   }
+  
+  .stack-grid-1 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+    margin: 0px auto;
+    justify-content: space-between;
+    
+  }
+  
+  .stack-grid-2 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
+    margin: 0px auto;
+    justify-content: space-between;
+    
+  }
+  
+  .stack-grid-3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr;
+    grid-auto-rows: auto;
+    margin: 0px auto;
+    justify-content: space-between;
+    
+  }
+
   .skillTile {
     display: flex;
     flex-direction: column;
+    margin-left: -28px;
   }
   
   #skillsHeader {
@@ -1155,16 +1229,10 @@ footer {
   .navLinks {
     display: none;
   }
-  .grid-container {
-    margin: 0px auto;
-    display: grid;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-  }
   .skillTile {
     display: flex;
     flex-direction: column;
-    
+   
   }
   
   .skillTile div {
@@ -1300,10 +1368,5 @@ footer {
   }
 
   /* Add more styles as needed for specific elements */
-  .grid-container {
-    margin: 0px 5%;
-    display: grid;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-columns: 1fr;
-  }
+ 
 }
