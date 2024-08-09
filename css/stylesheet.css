@@ -377,6 +377,43 @@ text-align: left;
   color: #464646;
 }
 
+#methodologies {
+  margin-bottom: 40px;
+}
+
+.methos {
+  width: 100%;
+  background-image: linear-gradient(to bottom, #462f9f, #d9592e);
+  padding: 60px 0px 48px 0px;
+  border-radius: 16px;
+}
+
+.methosRow {
+  margin-bottom: 80px;
+}
+
+.methosDiv {
+  width: 628px;
+  margin: 0px auto;
+  color: white;
+}
+
+.methosHeader {
+  margin-top: -8px;
+}
+
+.methosInfo {
+  margin-top: -16px;
+}
+
+.methosRow h2 {
+  color: white;
+}
+
+.methosRow h3 {
+  color: white;
+}
+
 
 .toolItem {
   margin-bottom: 80px;
