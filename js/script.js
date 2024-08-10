@@ -51,3 +51,17 @@ document.addEventListener("DOMContentLoaded", function() {
         navLinks.classList.toggle("open"); 
     });
 });
+
+
+$(document).ready(function() {
+    const images = [
+        { src: '/img/headshot/aboutMePortrait.png', alt: '/img/headshot/aboutMePortrait.png' },
+        { src: '/img/headshot/Garrett-denim-7.jpg', alt: '/img/headshot/Garrett-denim-7.jpg' },
+        // ... more images
+    ];
+
+    $.each(images, function(index, image) {
+        $('<img>').attr('src', image.src).attr('alt', image.alt).appendTo('.gallery');
+    });
+});
+
