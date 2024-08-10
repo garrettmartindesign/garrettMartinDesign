@@ -502,6 +502,64 @@ text-align: left;
   margin-bottom: 60px;
 }
 
+/*Contact---------------------------------------*/
+
+.contactForm {
+  width: 628px;
+  height: 460px;
+  margin: 0px auto;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+
+}
+
+.formTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#name, #email {
+  width: 100%;
+}
+
+#message {
+  height: 100px;
+}
+
+label { 
+  display: block; margin-bottom: 5px; }
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: .5px solid #4646464d;
+  box-sizing: border-box;
+  border-radius: 8px;
+  }
+
+input[type="submit"] {
+  width: 25%;
+  background-color: none;
+  color: #464646;
+  padding: 12px 20px;
+  border: .5px solid #464646;
+  border-radius: 8px;
+  cursor: pointer;
+  }
+
+input[type="submit"]:hover {
+  background-color: #462f9f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  }
 
 /*Photo gallery ----------------*/
 
@@ -702,18 +760,14 @@ nav {
 
 
 .socialMedia {
-  width: 100%;
+  width: 628px;
+  margin: 40px auto;
   display: flex;
-  padding: 0px 6px;
-  justify-content: space-between;
-  bottom: 0;
-  left: 0;
+  gap: 80px;
   }
 
 .socialMedia img {
-  width: 60px;
-  padding: 16px;
-  
+  width: 32px;
   }
 
 .sidenav a:hover {
@@ -740,7 +794,7 @@ main {
 }
 
 .header div {
-  margin-bottom: 40px;
+  margin-bottom: 24px;
 }
 
 .header h1 {
