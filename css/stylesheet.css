@@ -167,10 +167,16 @@
 /*----------------------------------------Body----------------------------------------------*/ 
 .flex-container {
   display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: #464646;
+  font-size: 1em;
+  text-align: left;
 }
 
 .icon {
-  width: 18px;
+  width: 16px;
   height: auto;
 }
 
@@ -405,6 +411,13 @@ text-align: left;
 
 .methosHeader {
   margin-top: -8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.methosHeader img {
+  padding-top: 6px;
 }
 
 .methosInfo {
@@ -413,9 +426,16 @@ text-align: left;
 
 .methosRow h2 {
   color: white;
+  font-size: 1em;
+  
 }
 
 .methosRow h3 {
+  color: white;
+  font-size: 1.2em;
+}
+
+#skillsHeader h3 {
   color: white;
 }
 
@@ -443,6 +463,8 @@ text-align: left;
   overflow-x: hidden; 
 }
 
+
+
 .titleHeader h2 {
   color: #452f9f;
 }
@@ -460,8 +482,19 @@ text-align: left;
  
 }
 
+.valueHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.valueHeader img {
+  padding-top: 6px;
+}
+
+
 .valueHeader h3 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 .valueInfo {
@@ -570,6 +603,10 @@ text-align: left;
   align-items: center;
   }  
 
+  .topLinks img {
+    padding-top: 6px;
+  }
+
 .topLinks div:hover {
   background-color: #f0f0f0;
   }
@@ -577,6 +614,8 @@ text-align: left;
 .navLinks {
   margin: 24px;
   }
+
+
 
 .active, .navAccordion:hover {
   color: #452f9f;
