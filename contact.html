@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="author" content="Garrett Martin">    
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="icon" href="img/logo/gmLogoPurple_circle@2x.png" type="image/x-icon">  
+
+<title>Garrett Martin Design | Home</title>
+<style>
+    
+</style>
+</head>
+<body>
+<!--Side Navigation------------------------------------------------------------------->
+<div class="flex-container">
+    <nav class="sidenav" id="sideNavHome">
+        <button id="menuToggle" class="menu-button">Menu</button>
+
+        <div class="logoImg">
+            <div class="logo">
+                <a href="index.html"><img src="img/headshot/simiportrait.png" alt="GMD Logo" width="52px" max-width="80px"></a>
+            </div>
+            <div class="navTitle">
+                <h3>Garrett Martin</h3>
+                <h4>UX/UI Designer</h4>
+            </div>
+        </div>
+        <div class="navLinks">
+            <div class="topLinks">
+                <a href="index.html"><div ><span><img src="img/icons/SVG/homeIcon.svg"  width="16px" alt="home icon" class="icon"></span><h4>Home</h4></div></a>
+                <a href="about.html"><div><span><img src="img/icons/SVG/aboutIcon.svg" width="16px" alt="about icon" class="icon"></span><h4>About Me</h4></div></a>
+                <a href="stack.html"><div><span><img src="img/icons/SVG/stackIcon.svg" width="16px" alt="stack icon" class="icon"></span><h4>The Stack</h4></div></a>
+                <a href="contact.html"><div id="currentPage"><span><img src="img/icons/SVG/contactIcon.svg" width="16px" alt="contact icon" class="icon"></span><h4>Contact</h4></div></a>
+            </div>
+        
+            <div class="featuredMenu">   
+                <button class="navAccordion"><h4>Featured Projects</h4></button>
+                <div class="navPanel">
+                <ul class="navPanel-contents">
+                    <li><a href="/sierrasrace.html">Sierra's Race</a></li> 
+                    <li><a href="/usda.html">USDA</a></li>
+                    <li><a href="/theSoundRoom.html">The Sound Room</a></li>
+                </ul>
+                </div>    
+            </div>
+            
+        </div>
+        
+    </nav>    
+<!--Page Content----------------------------------------------------------------->
+    <main class="homeBackground">
+        <section class="header">
+            <div class="titleHome">
+                <h1>Reach Out! <br>
+                    <em class="subHeaderColor"> Quotes, Feedback, say hello</em>
+                </h1>
+            </div>
+             
+            <div class="headerDescription">
+                <p><em>I like to stay in consistent communication.</em> This ensure we're on the same page and allows the ability to stay on top of priorties.</p>
+            </div>     
+            <div class="headerButtons">
+                <div class="callButton">
+                    <a href="tel:+13039092779"><button>
+                        <p>Phone</p>
+                    </button></a>
+                </div>
+                <div class="emailButton" >
+                    <a href="mailto:garrettmartindesign@gmail.com"><button>
+                        <p>Email</p>
+                    </button></a>
+                </div>
+            </div>    
+        </section>
+        <section>
+            <div class="socialMedia">
+                <a href="https://www.linkedin.com/in/garrettmartindesign/" rel="noopener" target="_blank"><img src="img/logo/logos/linkedin.png" alt="image"></a>
+                <a href="https://github.com/garrettmartindesign" rel="noopener" target="_blank"><img src="img/logo/logos/github logo.png" alt="image"></a>
+                <a href="https://www.behance.net/garrettmartin4" rel="noopener" target="_blank"><img src="img/logo/logos/behanceLogo.png" alt="image"></a>
+            </div>          
+        </section>    
+        <section>
+            <div class="contactForm">
+                <h2></h2>
+
+                <form action="https://formspree.io/f/xkgwbvjy" method="post"> 
+                <div class="formTop">
+                    <div id="name">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br><br>
+                    </div>
+                    <div id="email">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br><br>
+                    </div>
+                </div>  
+                <div id="message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"
+                    required></textarea><br><br>
+            
+                <input type="submit" value="Submit">
+                </div>
+                </form> 
+
+            </div>
+        </section>     
+    </main>
+
+</div>
+<footer>
+    <div class="footInfo">
+        <div><p>@All Rights Reserved, Garrett Martin Design</p></div>
+    </div>
+</footer>
+<!--Script------------------------------------------------------------------------------------>    
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
