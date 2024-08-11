@@ -65,3 +65,27 @@ $(document).ready(function() {
     });
 });
 
+const sections = document.querySelectorAll('div[id^="section"]'); // Select all sections
+const navLinks = document.querySelectorAll('.breadcrumb-menu a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+
+    if (pageYOffset >= (sectionTop - sectionHeight   
+ / 3)) { // Adjust the /3 for sensitivity
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').substring(1) === current) {
+      link.classList.add('active');   
+
+    }
+  });
+});

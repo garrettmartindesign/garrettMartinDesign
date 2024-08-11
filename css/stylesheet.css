@@ -1044,9 +1044,48 @@ button:hover {
   padding: 40px;
 }
 
+/*Case Studies-------------------------------------*/
+.breadcrumb-menu {
+  position: fixed; /* Fix the menu to the top */
+  top: 0px;
+  left: 300;
+  width: 80%;
+  background-color: white; /* Example background color */
+  border-bottom: .2px #4646462e solid;
+  padding: 12px 0px 0px 0px;
+  overflow-x: auto; 
+  z-index: 1;
+}
 
+.breadcrumb-menu ul {
+  justify-content: space-between;
+  list-style: none;
+  padding-right: 16px;
+  display: flex; 
+}
 
-/*Footer ------------------------------------*/
+.breadcrumb-menu li {
+  margin-right: 24px;
+  background-color: white;
+  padding: 6px 24px;
+  border-radius: 50px; 
+  border: 1px #46464651 solid;
+  font-size: .7em;
+}
+
+.breadcrumb-menu li:last-child {
+  margin-right: 0; 
+}
+
+.breadcrumb-menu a {
+  text-decoration: none;
+  color: #464646; 
+}
+
+.caseHeader {
+  margin-top: 80px;
+}
+----------------------*/
 
 footer {
   width: 70%;
