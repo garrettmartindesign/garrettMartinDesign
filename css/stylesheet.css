@@ -180,6 +180,11 @@
   height: auto;
 }
 
+.serviceIcon {
+  width: 32px;
+  height: auto;
+}
+
 .menu-button {
   display: none; 
   background-color: #452f9f; 
@@ -292,6 +297,10 @@ h4 {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+
+.whyMeIcons img {
+  padding-top: 4px;
 }
 
 
@@ -428,7 +437,8 @@ text-align: left;
 }
 
 .methosInfo {
-  margin-top: -16px;
+  margin-top: -24px;
+  padding-left: 46px; /*Unsure*/
 }
 
 .methosRow h2 {
@@ -443,8 +453,12 @@ text-align: left;
 }
 
 #skillsHeader h3 {
+  color: #464646;
+}
+#processHeader h3 {
   color: white;
 }
+
 
 
 .toolItem {
@@ -857,12 +871,48 @@ button:hover {
 
 .featureProject {
   width: 100%;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
   position: relative;
   border-radius: 4px;
   
 }
+ .featureProject div {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.528);
+  padding-left: 50%;
+  padding-top: 2%;
+  padding-right: 5%;
+ }
+
+ .featuredHeader {
+  width: 628px;
+  margin: 0px auto;
+ }
+
+ .featureType h2 {
+  color: white;
+ }
+
+ .featureProject div:hover {
+  width: 100%;
+  height: 100%;
+  color: white;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  transition-duration: .3s;
+  background-color: #462f9fe1;
+ }
+
+
 
 .featurePortrait {
   width: 100%;
@@ -881,6 +931,11 @@ button:hover {
   height: 100%;
   object-fit: cover;
   
+}
+
+.sierrasrace, .soundroom {
+  margin-bottom: 40px;
+  margin-top: 0px;
 }
 
 .overLay {
@@ -988,6 +1043,8 @@ button:hover {
   color: white;
   padding: 40px;
 }
+
+
 
 /*Footer ------------------------------------*/
 
